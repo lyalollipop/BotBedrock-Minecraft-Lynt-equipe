@@ -1,33 +1,24 @@
 # BotBedrock-Minecraft-Lynt-equipe
-import org.bukkit.Bukkit;
-import org.bukkit.Material;
-import org.bukkit.entity.Player;
-import org.bukkit.event.EventHandler;
-import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerAnimationEvent;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.PlayerInventory;
-import org.bukkit.plugin.java.JavaPlugin;
+This plugin is adaptable with any version of minecraft java, for it to work it needs the bukkit and be with the bedrock plugin to access java.
 
-public class DanceListener implements Listener {
+Creator: lollipop
 
-    public DanceListener(JavaPlugin plugin) {
-        plugin.getServer().getPluginManager().registerEvents(this, plugin);
-    }
+YouTube: https://youtube.com/@lollipopplaygame
 
-    @EventHandler
-    public void onPlayerDance(PlayerAnimationEvent event) {
-        Player player = event.getPlayer();
-        PlayerInventory inventory = player.getInventory();
+Goals of this plugin:
+Plugin created to help bedrock users to equip secondhand java servers to use the repair enchantment.
 
-        if (player.getBedrockEdition()) {
-            ItemStack mainHandItem = inventory.getItemInMainHand();
-            ItemStack offHandItem = inventory.getItemInOffHand();
 
-            if (mainHandItem.getType() != Material.AIR) {
-                inventory.setItemInOffHand(mainHandItem);
-                inventory.setItemInMainHand(offHandItem);
-            }
-        }
-    }
-}
+how it works:
+when active, as soon as a bedrock user dances, the plugin will identify and load the item from his hand to the second hand.
+
+rights:
+I give you full access to the plugin as long as you use it, post my discord and youtube channel on your server at least once each and keep it there.
+
+Discord:   https://discord.gg/Ft2J8mqGD2
+
+
+
+
+
+The plugin depends on the bukkit version to work. it catches on all versions of bukkit.
